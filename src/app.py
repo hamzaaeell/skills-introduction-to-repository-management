@@ -30,6 +30,8 @@ app.mount("/static", StaticFiles(directory=os.path.join(current_dir, "static")),
 def root():
     return RedirectResponse(url="/static/index.html")
 
+
+#added the codeowners
 # Include routers
 app.include_router(routers.activities.router)
 app.include_router(routers.auth.router)
